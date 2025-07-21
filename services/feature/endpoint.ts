@@ -14,7 +14,7 @@ const endpointSetup = (feature: string)=>{
     {   
         ui.push(item)
 
-        if(item === "// Routes")
+        if(item === "// Routes" || item === "// Routes\r")
             ui.push(`import ${name}Router from './${feature}/${feature}.routes'`)
     }
 
