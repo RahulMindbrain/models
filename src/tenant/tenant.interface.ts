@@ -6,3 +6,9 @@ export interface Tenant {
     createdAt:Date,
 
 }
+
+export interface IQueryResult{
+    tenants:Tenant[],
+    nextCursor:Date|null,
+    prevCursor:Date|null
+}
